@@ -1,2 +1,5 @@
-#!/bin/bash
-find . -name "*.html" -newer .. -exec sh -c 'test ! -f ../"$1" -o "$1" -nt ../"$1" && cp "$1" ../"$1"' sh {} \;
+#!/bin/bash 
+ cp -u *.html ..
+
+ 
+ 
